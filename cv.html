@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Muhammet Kaplan - CV</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.2/src/regular/style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&display=swap');
+
+    body {
+      font-family: 'Sora', sans-serif;
+      background: #f3f4f6;
+      color: #333;
+    }
+
+    /* Kesin A4 Sayfa Yapısı */
+    .page {
+      width: 210mm;
+      height: 297mm;
+      background: white;
+      margin: 1rem auto;
+      box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+      display: flex;
+      overflow: hidden; /* İkinci sayfaya taşmayı kesin olarak önler */
+      box-sizing: border-box;
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      body {
+        background: white;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .page {
+        margin: 0;
+        box-shadow: none;
+        width: 210mm;
+        height: 297mm;
+        overflow: hidden;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- SOL SÜTUN (Yetenekler ve İletişim) -->
+    <div class="w-[34%] bg-gray-50 text-gray-900 p-6 flex flex-col border-r border-gray-200 justify-between h-full box-border">
+      
+      <div>
+        <!-- Profil & İsim -->
+        <div class="flex flex-col items-center text-center mb-5 mt-1">
+          <img src="logomk.png" alt="Muhammet Kaplan" class="w-32 h-32 rounded-full object-cover border-4 border-white mb-4 shadow-sm bg-gray-200">
+          <h1 class="text-2xl font-extrabold tracking-tight mb-1 text-gray-900">Muhammet<br>Kaplan</h1>
+          <p class="text-[10px] font-bold tracking-widest uppercase text-gray-500">Yazılım Geliştirici</p>
+        </div>
+
+        <!-- İletişim -->
+        <div class="mb-5">
+          <h2 class="text-[10px] font-bold tracking-[0.2em] text-gray-400 uppercase mb-4 border-b border-gray-200 pb-1.5">
+            İletişim</h2>
+          <div class="space-y-3 text-[10px] font-medium text-gray-700">
+            <div class="flex items-center gap-3">
+              <i class="ph ph-map-pin text-lg text-gray-400 shrink-0"></i>
+              <span class="break-words">Gaziantep, Türkiye</span>
+            </div>
+            <a href="https://muhammetkaplan.com" target="_blank" class="flex items-center gap-3 hover:text-gray-950 transition-colors">
+              <i class="ph ph-globe text-lg text-gray-400 shrink-0"></i>
+              <span class="break-words">muhammetkaplan.com</span>
+            </a>
+            <a href="mailto:info@muhammetkaplan.com" class="flex items-center gap-3 hover:text-gray-950 transition-colors">
+              <i class="ph ph-envelope-simple text-lg text-gray-400 shrink-0"></i>
+              <span class="break-words">info@muhammetkaplan.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammet-kaplan-878936352/" target="_blank" class="flex items-center gap-3 hover:text-gray-950 transition-colors">
+              <i class="ph ph-linkedin-logo text-lg text-gray-400 shrink-0"></i>
+              <span class="break-words">/in/muhammet-kaplan</span>
+            </a>
+            <a href="https://github.com/Muhametkaplan" target="_blank" class="flex items-center gap-3 hover:text-gray-950 transition-colors">
+              <i class="ph ph-github-logo text-lg text-gray-400 shrink-0"></i>
+              <span class="break-words">github.com/Muhametkaplan</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Yetenekler -->
+        <div>
+          <h2 class="text-[10px] font-bold tracking-[0.2em] text-gray-400 uppercase mb-4 border-b border-gray-200 pb-1.5">
+            Yetenekler</h2>
+
+          <div class="space-y-3.5">
+            <div>
+              <h3 class="text-[9px] font-bold text-gray-400 uppercase mb-1.5">Mobil Geliştirme</h3>
+              <div class="flex flex-wrap gap-1">
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">Flutter</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">Dart</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">React Native</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">Expo</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-[9px] font-bold text-gray-400 uppercase mb-1.5">Masaüstü & Backend</h3>
+              <div class="flex flex-wrap gap-1">
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">C# (.NET Framework)</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">WinForms</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">Node.js</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">Express.js</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">Python</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">C++</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-[9px] font-bold text-gray-400 uppercase mb-1.5">Web Frontend</h3>
+              <div class="flex flex-wrap gap-1">
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">React.js</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">HTML5</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">CSS3</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">JavaScript</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">Tailwind CSS</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-[9px] font-bold text-gray-400 uppercase mb-1.5">Bulut & Veritabanı</h3>
+              <div class="flex flex-wrap gap-1">
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">Firebase (Firestore, Auth)</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">MySQL</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">MS SQL</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-[9px] font-bold text-gray-400 uppercase mb-1.5">Görüntü İşleme & Algoritma</h3>
+              <div class="flex flex-wrap gap-1">
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">OpenCV (Dart/Python)</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">MediaPipe</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">OMR Algoritmaları</span>
+              </div>
+            </div>
+
+            <div>
+              <h3 class="text-[9px] font-bold text-gray-400 uppercase mb-1.5">Sistem Mimarisi & Araçlar</h3>
+              <div class="flex flex-wrap gap-1">
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">Windows API (P/Invoke)</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">Git</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">Figma</span>
+                <span class="px-2 py-0.5 bg-white border border-gray-200 text-gray-700 text-[9px] font-semibold rounded shadow-xs">WebRTC</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Küçük Alt Bilgi -->
+      <div class="text-[9px] text-gray-400 text-center pt-2 border-t border-gray-100">
+        © 2026 Muhammet Kaplan
+      </div>
+
+    </div>
+
+    <!-- SAĞ SÜTUN -->
+    <div class="w-[66%] bg-white p-6 flex flex-col justify-between h-full box-border">
+
+      <div class="space-y-4">
+        <!-- HAKKIMDA -->
+        <div>
+          <h2 class="text-[12px] font-bold tracking-[0.15em] text-gray-950 uppercase mb-2 flex items-center gap-1.5">
+            <i class="ph ph-user text-base text-gray-800"></i>
+            Profil
+          </h2>
+          <p class="text-[12px] text-gray-600 leading-relaxed font-medium">
+            Mobil, masaüstü ve web platformlarında yenilikçi ve yüksek performanslı uygulamalar geliştiren çok yönlü bir yazılımcıyım. Görüntü işlemeden (OpenCV), gerçek zamanlı bulut tabanlı sistemlere (Firebase) ve donanım düzeyindeki masaüstü araçlarına (Windows API) kadar geniş bir yelpazede uçtan uca çözümler üretiyorum.
+          </p>
+        </div>
+
+        <!-- PROJELER -->
+        <div>
+          <h2 class="text-[12px] font-bold tracking-[0.15em] text-gray-950 uppercase mb-3 flex items-center gap-1.5">
+            <i class="ph ph-rocket text-base text-gray-800"></i>
+            Öne Çıkan Projeler
+          </h2>
+
+          <div class="relative pl-5 border-l-2 border-gray-200 space-y-4">
+
+            <div class="relative">
+              <div class="absolute -left-[27px] top-1 w-3 h-3 rounded-full bg-white border-[3px] border-gray-800"></div>
+              <div class="flex justify-between items-baseline mb-0.5">
+                <h3 class="text-[13px] font-bold text-gray-900">Akıllı Yoklama ve OMR Sistemi</h3>
+              </div>
+              <p class="text-[10px] text-gray-500 mb-1 font-bold uppercase tracking-wide">Flutter, Dart, Firebase, OpenCV</p>
+              <ul class="list-none text-[11.5px] text-gray-600 space-y-1 font-medium">
+                <li class="relative pl-3.5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.2 before:h-1.2 before:bg-gray-500 before:rounded-full">
+                  QR Kod, cihaz kimliği ve GPS koordinat doğrulaması ile vekaleten yoklamayı engelleme sistemi.</li>
+                <li class="relative pl-3.5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.2 before:h-1.2 before:bg-gray-500 before:rounded-full">
+                  OpenCV ile kameradan çoktan seçmeli optik form (OMR) okuma ve algoritma tabanlı işaret tespiti.</li>
+              </ul>
+            </div>
+
+            <div class="relative">
+              <div class="absolute -left-[27px] top-1 w-3 h-3 rounded-full bg-white border-[3px] border-gray-300"></div>
+              <div class="flex justify-between items-baseline mb-0.5">
+                <h3 class="text-[13px] font-bold text-gray-900">Privacy Shield Pro</h3>
+              </div>
+              <p class="text-[10px] text-gray-500 mb-1 font-bold uppercase tracking-wide">C#, .NET 4.7.2, Windows API</p>
+              <ul class="list-none text-[11.5px] text-gray-600 space-y-1 font-medium">
+                <li class="relative pl-3.5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.2 before:h-1.2 before:bg-gray-400 before:rounded-full">
+                  Ekran paylaşımı sırasında tek tuşla (Ctrl+Shift+S) kişisel uygulamaları gizleme ve masaüstü duvar kağıdını güvenli hale getirme.</li>
+                <li class="relative pl-3.5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.2 before:h-1.2 before:bg-gray-400 before:rounded-full">
+                  P/Invoke (user32.dll) üzerinden düşük seviye API çağrıları ile uygulama başlangıç ve gizlilik yönetimi.</li>
+              </ul>
+            </div>
+
+            <div class="relative">
+              <div class="absolute -left-[27px] top-1 w-3 h-3 rounded-full bg-white border-[3px] border-gray-300"></div>
+              <div class="flex justify-between items-baseline mb-0.5">
+                <h3 class="text-[13px] font-bold text-gray-900">CineLog & Dijital Sığınak</h3>
+              </div>
+              <p class="text-[10px] text-gray-500 mb-1 font-bold uppercase tracking-wide">Flutter, Firebase, TMDB API</p>
+              <ul class="list-none text-[11.5px] text-gray-600 space-y-1 font-medium">
+                <li class="relative pl-3.5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.2 before:h-1.2 before:bg-gray-400 before:rounded-full">
+                  <strong>CineLog:</strong> Sinema dünyası ile sosyal medyayı birleştiren, TMDB destekli tam teşekküllü mobil platform.</li>
+                <li class="relative pl-3.5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.2 before:h-1.2 before:bg-gray-400 before:rounded-full">
+                  <strong>Dijital Sığınak:</strong> Pilates eğitmen ve öğrencilerini buluşturan, yapay zeka destekli akıllı antrenman önerme motoru.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- İŞ DENEYİMİ -->
+        <div>
+          <h2 class="text-[12px] font-bold tracking-[0.15em] text-gray-950 uppercase mb-3 flex items-center gap-1.5">
+            <i class="ph ph-briefcase text-base text-gray-800"></i>
+            Girişim & Deneyim
+          </h2>
+
+          <div class="relative pl-5 border-l-2 border-gray-200">
+            <div class="relative">
+              <div class="absolute -left-[27px] top-1 w-3 h-3 rounded-full bg-white border-[3px] border-gray-800"></div>
+              <div class="flex justify-between items-baseline mb-0.5">
+                <h3 class="text-[13px] font-bold text-gray-900">Kurucu & Dijital Pazarlama Yöneticisi</h3>
+                <span class="text-[9px] text-gray-700 font-bold bg-gray-100 px-2 py-0.5 rounded">Mart 2025 - Halen</span>
+              </div>
+              <p class="text-[12px] text-gray-800 font-bold">marincollective</p>
+              <ul class="list-none text-[11.5px] text-gray-600 space-y-1 font-medium">
+                <li class="relative pl-3.5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.2 before:h-1.2 before:bg-gray-500 before:rounded-full">
+                  Shopify ve yerel e-ticaret altyapıları üzerinden dropshipping ve dijital satış stratejilerinin (IPS Metodu) yönetilmesi.</li>
+                <li class="relative pl-3.5 before:content-[''] before:absolute before:left-0 before:top-[7px] before:w-1.2 before:h-1.2 before:bg-gray-500 before:rounded-full">
+                  Instagram ve sosyal medya platformları üzerinde marka konumlandırma.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- EĞİTİM -->
+        <div>
+          <h2 class="text-[12px] font-bold tracking-[0.15em] text-gray-950 uppercase mb-3 flex items-center gap-1.5">
+            <i class="ph ph-graduation-cap text-base text-gray-800"></i>
+            Eğitim
+          </h2>
+
+          <div class="relative pl-5 border-l-2 border-gray-200 space-y-3.5">
+            <!-- Üniversite -->
+            <div class="relative">
+              <div class="absolute -left-[27px] top-1 w-3 h-3 rounded-full bg-white border-[3px] border-gray-800"></div>
+              <div class="flex justify-between items-baseline mb-0.5">
+                <h3 class="text-[13px] font-bold text-gray-900">Bilgisayar Programcılığı <span class="text-[11px] text-gray-500 font-medium">(Ön Lisans)</span></h3>
+                <span class="text-[9px] text-gray-700 font-bold bg-gray-100 px-2 py-0.5 rounded">2025 - Halen</span>
+              </div>
+              <p class="text-[12px] text-gray-800 font-bold">Ardahan Üniversitesi</p>
+            </div>
+
+            <!-- Lise -->
+            <div class="relative">
+              <div class="absolute -left-[27px] top-1 w-3 h-3 rounded-full bg-white border-[3px] border-gray-300"></div>
+              <div class="flex justify-between items-baseline mb-0.5">
+                <h3 class="text-[13px] font-bold text-gray-900">Anadolu Lisesi <span class="text-[11px] text-gray-500 font-medium">(Lise)</span></h3>
+                <span class="text-[9px] text-gray-700 font-bold bg-gray-100 px-2 py-0.5 rounded">2021 - 2025</span>
+              </div>
+              <p class="text-[12px] text-gray-800 font-bold">Gaziantep Bağlarbaşı Anadolu Lisesi</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SİTEYE YÜKLERKEN AŞAĞIDAKİ SKRİPTİ İPTAL EDEBİLİRSİNİZ, SADECE OTOMATİK PDF YAZDIRMAK İÇİNDİR -->
+  <script>
+    if (window.location.search.includes('print=1')) {
+      setTimeout(() => {
+        window.print();
+      }, 500);
+    }
+  </script>
+
+</body>
+</html>
